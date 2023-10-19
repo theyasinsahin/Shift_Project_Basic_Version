@@ -1,0 +1,8 @@
+C:\Users\Yasin\Desktop\CodingStudies\C#\ShiftProjectBasic\ShiftProjectBasic\bin\Debug\ShiftProjectBasic.exe.config
+C:\Users\Yasin\Desktop\CodingStudies\C#\ShiftProjectBasic\ShiftProjectBasic\bin\Debug\ShiftProjectBasic.exe
+C:\Users\Yasin\Desktop\CodingStudies\C#\ShiftProjectBasic\ShiftProjectBasic\bin\Debug\ShiftProjectBasic.pdb
+C:\Users\Yasin\Desktop\CodingStudies\C#\ShiftProjectBasic\ShiftProjectBasic\obj\Debug\ShiftProjectBasic.csproj.AssemblyReference.cache
+C:\Users\Yasin\Desktop\CodingStudies\C#\ShiftProjectBasic\ShiftProjectBasic\obj\Debug\ShiftProjectBasic.csproj.SuggestedBindingRedirects.cache
+C:\Users\Yasin\Desktop\CodingStudies\C#\ShiftProjectBasic\ShiftProjectBasic\obj\Debug\ShiftProjectBasic.csproj.CoreCompileInputs.cache
+C:\Users\Yasin\Desktop\CodingStudies\C#\ShiftProjectBasic\ShiftProjectBasic\obj\Debug\ShiftProjectBasic.exe
+C:\Users\Yasin\Desktop\CodingStudies\C#\ShiftProjectBasic\ShiftProjectBasic\obj\Debug\ShiftProjectBasic.pdb
