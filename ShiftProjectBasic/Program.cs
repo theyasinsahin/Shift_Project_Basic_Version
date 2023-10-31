@@ -38,8 +38,10 @@ namespace ConsoleApp2
 
             while (control)
             {
+                Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine("Please enter a number from 1 to 9 for x1-y1: ");
                 str_a1 = Console.ReadLine();
+                Console.ForegroundColor = ConsoleColor.Red;
                 if (int.TryParse(str_a1, out a1))
                 {
                     if((1 <= a1 & a1 <= 9))
@@ -55,12 +57,15 @@ namespace ConsoleApp2
                 {
                     Console.WriteLine("Please enter a valid number");
                 }
+                Console.ResetColor();
             }
 
             while (control)
             {
+                Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine("Please enter a number from 1 to 9 for x1-y2: ");
                 str_a2 = Console.ReadLine();
+                Console.ForegroundColor = ConsoleColor.Red;
                 if (int.TryParse(str_a2, out a2))
                 {
                     if ((1 <= a2 & a2 <= 9))
@@ -83,12 +88,16 @@ namespace ConsoleApp2
                 {
                     Console.WriteLine("Please enter a valid number");
                 }
+                Console.ResetColor();
+
             }
 
             while (control)
             {
+                Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine("Please enter a number from 1 to 9 for x1-y3: ");
                 str_a3 = Console.ReadLine();
+                Console.ForegroundColor = ConsoleColor.Red;
                 if (int.TryParse(str_a3, out a3))
                 {
                     if((1 <= a3 & a3 <= 9))
@@ -111,12 +120,15 @@ namespace ConsoleApp2
                 {
                     Console.WriteLine("Please enter a valid number");
                 }
+                Console.ResetColor();
             }
 
             while (control)
             {
+                Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine("Please enter a number from 1 to 9 for x2-y1: ");
                 str_b1 = Console.ReadLine();
+                Console.ForegroundColor = ConsoleColor.Red;
                 if (int.TryParse(str_b1, out b1))
                 {
                     if((1 <= b1 & b1 <= 9))
@@ -134,17 +146,21 @@ namespace ConsoleApp2
                     {
                         Console.WriteLine("Please enter a number between 1-9");
                     }
+
                 }
                 else
                 {
                     Console.WriteLine("Please enter a valid number");
                 }
+                Console.ResetColor();
             }
 
             while (control)
             {
+                Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine("Please enter a number from 1 to 9 for x2-y2: ");
                 str_b2 = Console.ReadLine();
+                Console.ForegroundColor = ConsoleColor.Red;
                 if (int.TryParse(str_b2, out b2))
                 {
                     if ((1 <= b2 & b2 <= 9))
@@ -167,12 +183,15 @@ namespace ConsoleApp2
                 {
                     Console.WriteLine("Please enter a valid number");
                 }
+                Console.ResetColor();
             }
 
             while (control)
             {
+                Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine("Please enter a number from 1 to 9 for x2-y3: ");
                 str_b3 = Console.ReadLine();
+                Console.ForegroundColor = ConsoleColor.Red;
                 if (int.TryParse(str_b3, out b3))
                 {
                     if ((1 <= b3 & b3 <= 9))
@@ -196,12 +215,15 @@ namespace ConsoleApp2
                 {
                     Console.WriteLine("Please enter a valid number");
                 }
+                Console.ResetColor();
             }
 
             while (control)
             {
+                Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine("Please enter a number from 1 to 9 for x3-y1: ");
                 str_c1 = Console.ReadLine();
+                Console.ForegroundColor = ConsoleColor.Red;
                 if (int.TryParse(str_c1, out c1))
                 {
                     if ((1 <= c1 & c1 <= 9))
@@ -224,12 +246,15 @@ namespace ConsoleApp2
                 {
                     Console.WriteLine("Please enter a valid number");
                 }
+                Console.ResetColor();
             }
 
             while (control)
             {
+                Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine("Please enter a number from 1 to 9 for x3-y2: ");
                 str_c2 = Console.ReadLine();
+                Console.ForegroundColor = ConsoleColor.Red;
                 if (int.TryParse(str_c2, out c2))
                 {
                     if ((1 <= c2 & c2 <= 9))
@@ -252,12 +277,15 @@ namespace ConsoleApp2
                 {
                     Console.WriteLine("Please enter a valid number");
                 }
+                Console.ResetColor();
             }
 
             while (control)
             {
+                Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine("Please enter a number from 1 to 9 for x3-y3: ");
                 str_c3 = Console.ReadLine();
+                Console.ForegroundColor = ConsoleColor.Red;
                 if (int.TryParse(str_c3, out c3))
                 {
                     if ((1 <= c3 & c3 <= 9))
@@ -280,11 +308,14 @@ namespace ConsoleApp2
                 {
                     Console.WriteLine("Please enter a valid number");
                 }
+                Console.ResetColor();
             }
 
 
+            Console.ResetColor();
 
             // print board 
+            Console.ForegroundColor = ConsoleColor.DarkCyan;
             Console.WriteLine($"----------Round {round}----------");
             Console.WriteLine("    1 2 3 ");
             Console.WriteLine("  + - - - +");
@@ -292,7 +323,7 @@ namespace ConsoleApp2
             Console.WriteLine($"2 | {b1} {b2} {b3} |");
             Console.WriteLine($"3 | {c1} {c2} {c3} |");
             Console.WriteLine("  + - - - +");
-
+            Console.ResetColor();
             int comboCounter = 0;
             int score = 0;
             //first row controlling
@@ -352,9 +383,11 @@ namespace ConsoleApp2
             int boardScore = score;
             int playerScore = 0;
             int computerScore = 0;
+            Console.ForegroundColor = ConsoleColor.Yellow;
             Console.WriteLine($"Board Score: {boardScore}");
             Console.WriteLine($"Player Score: {playerScore}");
             Console.WriteLine($"Computer Score: {computerScore}");
+            Console.ResetColor();
 
 
             bool turn = true;
@@ -363,6 +396,7 @@ namespace ConsoleApp2
 
             while (boardScore != 0)
             {
+                Console.ForegroundColor = ConsoleColor.Blue;
                 if (turn)
                 {
                     whoPlays = "Player";
@@ -373,22 +407,44 @@ namespace ConsoleApp2
                     whoPlays = "Computer";
                     Console.WriteLine($"Turn : {moveCounter} / {whoPlays}");
                 }
+                Console.ResetColor();
 
                 // move the selected column 
                 int move;
+                string str_move;
                 if (turn)
                 {
-                    Console.WriteLine("Which move do you want to make?");
-                    move = Convert.ToInt32(Console.ReadLine());
-                    Console.WriteLine($"Command: {move}");
+                    while (true)
+                    {
+                        Console.ForegroundColor = ConsoleColor.DarkGreen;
+                        Console.WriteLine("Which move do you want to make?");
+                        Console.ResetColor(); str_move = Console.ReadLine();
+                        if (int.TryParse(str_move, out move))
+                        {
+                            Console.ForegroundColor= ConsoleColor.DarkMagenta;
+                            Console.WriteLine($"Command: {move}");
+                            Console.ResetColor();
+                            break;
+                        }
+                        else
+                        {
+                            Console.ForegroundColor = ConsoleColor.Red;
+                            Console.WriteLine("Please choose a number between 1 and 6");
+                            Console.ResetColor();
+                        }
+                    }
                 }
                 else
                 {
+                    Console.ForegroundColor=ConsoleColor.DarkGreen;
                     Console.WriteLine("When you enter any key computer going to play");
+                    Console.ResetColor();
                     Console.ReadLine();
                     Random random = new Random();
                     move = random.Next(1, 7);
+                    Console.ForegroundColor = ConsoleColor.DarkMagenta;
                     Console.WriteLine($"Command: {move}");
+                    Console.ResetColor();
                 }
                 int a_1 = a1;
                 int a_2 = a2;
@@ -400,40 +456,56 @@ namespace ConsoleApp2
                 int c_2 = c2;
                 int c_3 = c3;
                 // swich is a statement 
-                switch (move)
+                bool istrue = true;
+                while (istrue)
                 {
-                    case (1):
-                        a1 = a_3;
-                        a2 = a_1;
-                        a3 = a_2;
-                        break;
-                    case (2):
-                        b1 = b_3;
-                        b2 = b_1;
-                        b3 = b_2;
-                        break;
-                    case (3):
-                        c1 = c_3;
-                        c2 = c_1;
-                        c3 = c_2;
-                        break;
-                    case (4):
-                        a1 = c_1;
-                        b1 = a_1;
-                        c1 = b_1;
-                        break;
-                    case (5):
-                        a2 = c_2;
-                        b2 = a_2;
-                        c2 = b_2;
-                        break;
-                    case (6):
-                        a3 = c_3;
-                        b3 = a_3;
-                        c3 = b_3;
-                        break;
+                    istrue = false;
+                    switch (move)
+                    {
+                        case (1):
+                            a1 = a_3;
+                            a2 = a_1;
+                            a3 = a_2;
+                            break;
+                        case (2):
+                            b1 = b_3;
+                            b2 = b_1;
+                            b3 = b_2;
+                            break;
+                        case (3):
+                            c1 = c_3;
+                            c2 = c_1;
+                            c3 = c_2;
+                            break;
+                        case (4):
+                            a1 = c_1;
+                            b1 = a_1;
+                            c1 = b_1;
+                            break;
+                        case (5):
+                            a2 = c_2;
+                            b2 = a_2;
+                            c2 = b_2;
+                            break;
+                        case (6):
+                            a3 = c_3;
+                            b3 = a_3;
+                            c3 = b_3;
+                            break;
+                        default:
+                            istrue = true;
+
+                            Console.ForegroundColor = ConsoleColor.Red;
+                            Console.WriteLine("The move must be between 1-6");
+                            Console.ResetColor();
+                            move = Convert.ToInt32(Console.ReadLine());
+                            Console.ForegroundColor = ConsoleColor.DarkMagenta;
+                            Console.WriteLine($"Command: {move}");
+                            Console.ResetColor(); break;
+                    }
                 }
                 // print moved board 
+                Console.ForegroundColor = ConsoleColor.DarkCyan;
                 Console.WriteLine($"----------Round {round}----------");
                 Console.WriteLine("   1 2 3  ");
                 Console.WriteLine(" + - - - +");
@@ -441,7 +513,7 @@ namespace ConsoleApp2
                 Console.WriteLine($"2| {b1} {b2} {b3} |");
                 Console.WriteLine($"3| {c1} {c2} {c3} |");
                 Console.WriteLine(" + - - - +");
-
+                Console.ResetColor();
 
                 //SCORE CONTROL
                 comboCounter = 0;
@@ -501,20 +573,17 @@ namespace ConsoleApp2
                 }
                 boardScore = score;
 
+                Console.ForegroundColor = ConsoleColor.Yellow;
                 Console.WriteLine($"Board Score: {boardScore}");
                 Console.WriteLine($"Player Score: {playerScore}");
                 Console.WriteLine($"Computer Score: {computerScore}");
+                Console.ResetColor();
 
                 if (turn)
-                {
                     turn = false;
-                    moveCounter++;
-                }
                 else
-                {
                     turn = true;
-                    moveCounter++;
-                }
+                moveCounter++;
             }
             // we write code in while loop because we want to play when we have new series
             int preround = round;
@@ -528,6 +597,7 @@ namespace ConsoleApp2
                     moveCounter = 1;
                     preround = round;
                 }
+                Console.ForegroundColor = ConsoleColor.Blue;
                 if (turn)
                 {
                     whoPlays = "Player";
@@ -538,9 +608,11 @@ namespace ConsoleApp2
                     whoPlays = "Computer";
                     Console.WriteLine($"Turn : {moveCounter} / {whoPlays}");
                 }
+                Console.ResetColor();
 
                 // move the selected column 
                 int move;
+                string str_move;
                 int a_1 = a1;
                 int a_2 = a2;
                 int a_3 = a3;
@@ -552,14 +624,31 @@ namespace ConsoleApp2
                 int c_3 = c3;
                 if (turn)
                 {
-                    Console.WriteLine("Which move do you want to make?");
-                    move = Convert.ToInt32(Console.ReadLine());
-                    Console.WriteLine($"Command: {move}");
+                    while(true)
+                    {
+                        Console.ForegroundColor= ConsoleColor.DarkGreen;
+                        Console.WriteLine("Which move do you want to make?");
+                        Console.ResetColor();
+                        str_move = Console.ReadLine();
+                        if (int.TryParse(str_move, out move))
+                        {
+                            Console.ForegroundColor = ConsoleColor.DarkMagenta;
+                            Console.WriteLine($"Command: {move}");
+                            Console.ResetColor(); break;
+                        }
+                        else
+                        {
+                            Console.ForegroundColor = ConsoleColor.Red;
+                            Console.WriteLine("Please choose a number between 1 and 6");
+                            Console.ResetColor();
+                        }
+                    }
                 }
                 else
                 {
+                    Console.ForegroundColor = ConsoleColor.DarkGreen;
                     Console.WriteLine("When you enter any key computer going to play");
-                    Console.ReadLine();
+                    Console.ResetColor(); Console.ReadLine();
                     Random random = new Random();
 
                     // check the right move if it can ************************************************
@@ -715,45 +804,63 @@ namespace ConsoleApp2
                     {
                         move = random.Next(1, 7);
                     }
+                    Console.ForegroundColor = ConsoleColor.DarkMagenta;
                     Console.WriteLine($"Command: {move}");
+                    Console.ResetColor();
                 }
                 if (boardScore != 0)
                 {
                     // swich is a statement 
-                    switch (move)
+                    bool istrue = true;
+                    while (istrue)
                     {
-                        case (1):
-                            a1 = a_3;
-                            a2 = a_1;
-                            a3 = a_2;
-                            break;
-                        case (2):
-                            b1 = b_3;
-                            b2 = b_1;
-                            b3 = b_2;
-                            break;
-                        case (3):
-                            c1 = c_3;
-                            c2 = c_1;
-                            c3 = c_2;
-                            break;
-                        case (4):
-                            a1 = c_1;
-                            b1 = a_1;
-                            c1 = b_1;
-                            break;
-                        case (5):
-                            a2 = c_2;
-                            b2 = a_2;
-                            c2 = b_2;
-                            break;
-                        case (6):
-                            a3 = c_3;
-                            b3 = a_3;
-                            c3 = b_3;
-                            break;
+                        istrue = false;
+                        switch (move)
+                        {
+                            case (1):
+                                a1 = a_3;
+                                a2 = a_1;
+                                a3 = a_2;
+                                break;
+                            case (2):
+                                b1 = b_3;
+                                b2 = b_1;
+                                b3 = b_2;
+                                break;
+                            case (3):
+                                c1 = c_3;
+                                c2 = c_1;
+                                c3 = c_2;
+                                break;
+                            case (4):
+                                a1 = c_1;
+                                b1 = a_1;
+                                c1 = b_1;
+                                break;
+                            case (5):
+                                a2 = c_2;
+                                b2 = a_2;
+                                c2 = b_2;
+                                break;
+                            case (6):
+                                a3 = c_3;
+                                b3 = a_3;
+                                c3 = b_3;
+                                break;
+                            default:
+                                istrue = true;
+
+                                Console.ForegroundColor = ConsoleColor.Red;
+                                Console.WriteLine("The move must be between 1-6");
+                                Console.ResetColor(); move = Convert.ToInt32(Console.ReadLine());
+                                Console.ForegroundColor = ConsoleColor.DarkMagenta;
+                                Console.WriteLine($"Command: {move}");
+                                Console.ResetColor(); 
+                                break;
+                        }
                     }
                     // print moved board 
+                    Console.ForegroundColor = ConsoleColor.DarkCyan;
                     Console.WriteLine($"----------Round {round}----------");
                     Console.WriteLine("   1 2 3  ");
                     Console.WriteLine(" + - - - +");
@@ -761,7 +868,7 @@ namespace ConsoleApp2
                     Console.WriteLine($"2| {b1} {b2} {b3} |");
                     Console.WriteLine($"3| {c1} {c2} {c3} |");
                     Console.WriteLine(" + - - - +");
-
+                    Console.ResetColor();
 
                     //SCORE CONTROL
                     comboCounter = 0;
@@ -833,48 +940,66 @@ namespace ConsoleApp2
 
                     boardScore = score;
 
+                    Console.ForegroundColor = ConsoleColor.Yellow;
                     Console.WriteLine($"Board Score: {boardScore}");
                     Console.WriteLine($"Player Score: {playerScore}");
                     Console.WriteLine($"Computer Score: {computerScore}");
+                    Console.ResetColor();
                 }
 
                 else
                 {
                     // swich is a statement 
-                    switch (move)
+                    bool istrue = true;
+                    while (istrue)
                     {
-                        case (1):
-                            a1 = a_3;
-                            a2 = a_1;
-                            a3 = a_2;
-                            break;
-                        case (2):
-                            b1 = b_3;
-                            b2 = b_1;
-                            b3 = b_2;
-                            break;
-                        case (3):
-                            c1 = c_3;
-                            c2 = c_1;
-                            c3 = c_2;
-                            break;
-                        case (4):
-                            a1 = c_1;
-                            b1 = a_1;
-                            c1 = b_1;
-                            break;
-                        case (5):
-                            a2 = c_2;
-                            b2 = a_2;
-                            c2 = b_2;
-                            break;
-                        case (6):
-                            a3 = c_3;
-                            b3 = a_3;
-                            c3 = b_3;
-                            break;
+                        istrue = false;
+                        switch (move)
+                        {
+                            case (1):
+                                a1 = a_3;
+                                a2 = a_1;
+                                a3 = a_2;
+                                break;
+                            case (2):
+                                b1 = b_3;
+                                b2 = b_1;
+                                b3 = b_2;
+                                break;
+                            case (3):
+                                c1 = c_3;
+                                c2 = c_1;
+                                c3 = c_2;
+                                break;
+                            case (4):
+                                a1 = c_1;
+                                b1 = a_1;
+                                c1 = b_1;
+                                break;
+                            case (5):
+                                a2 = c_2;
+                                b2 = a_2;
+                                c2 = b_2;
+                                break;
+                            case (6):
+                                a3 = c_3;
+                                b3 = a_3;
+                                c3 = b_3;
+                                break;
+                            default:
+                                istrue = true;
+
+                                Console.ForegroundColor = ConsoleColor.Red;
+                                Console.WriteLine("The move must be between 1-6");
+                                Console.ResetColor(); move = Convert.ToInt32(Console.ReadLine());
+                                Console.ForegroundColor = ConsoleColor.DarkMagenta;
+                                Console.WriteLine($"Command: {move}");
+                                Console.ResetColor();
+                                break;
+                        }
                     }
                     // print moved board 
+                    Console.ForegroundColor = ConsoleColor.DarkCyan;
                     Console.WriteLine($"----------Round {round}----------");
                     Console.WriteLine("   1 2 3  ");
                     Console.WriteLine(" + - - - +");
@@ -882,7 +1007,7 @@ namespace ConsoleApp2
                     Console.WriteLine($"2| {b1} {b2} {b3} |");
                     Console.WriteLine($"3| {c1} {c2} {c3} |");
                     Console.WriteLine(" + - - - +");
-
+                    Console.ResetColor();
 
                     //SCORE CONTROL
                     comboCounter = 0;
@@ -957,14 +1082,19 @@ namespace ConsoleApp2
                     {
                         boardScore = score;
                     }
+
+                    Console.ForegroundColor = ConsoleColor.Yellow;
                     Console.WriteLine($"Board Score: {boardScore}");
                     Console.WriteLine($"Player Score: {playerScore}");
                     Console.WriteLine($"Computer Score: {computerScore}");
+                    Console.ResetColor();
+
                     if (computerScore > precomputerscore)
                     {
                         if (score != 0)
                         {
                             precomputerscore = computerScore;
+                            Console.ForegroundColor = ConsoleColor.Green;
                             Console.WriteLine("End of Round!");
                             boardScore = 0;
                             round++;
@@ -991,7 +1121,7 @@ namespace ConsoleApp2
                                 Console.ReadLine();
                                 break;
                             }
-
+                            Console.ResetColor();
 
                             if (round != 1)
                             {
@@ -1097,7 +1227,7 @@ namespace ConsoleApp2
                             }
 
                         }
-
+                        Console.ForegroundColor = ConsoleColor.DarkCyan;
                         Console.WriteLine($"----------Round {round} ----------");
                         Console.WriteLine("   1 2 3  ");
                         Console.WriteLine(" + - - - +");
@@ -1105,10 +1235,11 @@ namespace ConsoleApp2
                         Console.WriteLine($"2| {b1} {b2} {b3} |");
                         Console.WriteLine($"3| {c1} {c2} {c3} |");
                         Console.WriteLine(" + - - - +");
+                        Console.ForegroundColor= ConsoleColor.Yellow;
                         Console.WriteLine($"Board Score: {boardScore}");
                         Console.WriteLine($"Player Score: {playerScore}");
                         Console.WriteLine($"Computer Score: {computerScore}");
-
+                        Console.ResetColor();
 
 
                     }
@@ -1117,6 +1248,7 @@ namespace ConsoleApp2
                         if (score != 0)
                         {
                             preplayerscore = playerScore;
+                            Console.ForegroundColor = ConsoleColor.Green;
                             Console.WriteLine("End of Round!");
                             boardScore = 0;
                             round++;
@@ -1143,6 +1275,7 @@ namespace ConsoleApp2
                                 Console.ReadLine();
                                 break;
                             }
+                            Console.ResetColor();
 
                             if (round != 1)
                             {
@@ -1247,7 +1380,7 @@ namespace ConsoleApp2
                             }
                             boardScore = score;
                         }
-
+                        Console.ForegroundColor = ConsoleColor.DarkCyan;
                         Console.WriteLine($"----------Round {round}----------");
                         Console.WriteLine("   1 2 3  ");
                         Console.WriteLine(" + - - - +");
@@ -1255,9 +1388,11 @@ namespace ConsoleApp2
                         Console.WriteLine($"2| {b1} {b2} {b3} |");
                         Console.WriteLine($"3| {c1} {c2} {c3} |");
                         Console.WriteLine(" + - - - +");
+                        Console.ForegroundColor= ConsoleColor.Yellow;
                         Console.WriteLine($"Board Score: {boardScore}");
                         Console.WriteLine($"Player Score: {playerScore}");
                         Console.WriteLine($"Computer Score: {computerScore}");
+                        Console.ResetColor();
                     }
                 }
             }
